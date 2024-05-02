@@ -1,0 +1,184 @@
+:root {
+    --background: #060D23;
+    --linkedin: #0A66C2;
+    --youtube: #e52d27;
+    --x: #0F1419;
+    --white: #FFF;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    color: #DFE7F2;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3574F2;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-container {
+    color: #ECF2DF;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    padding-right: 1em;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.home-section {
+    padding-top: 3rem;
+    background: linear-gradient(#000, #3574F2);
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 0 0.2rem 0;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/* Estilos para social media buttons */
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.social-media-button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+
+.social-media-button:hover {
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+
+.social-media-button img {
+    transition: all 0.3s;
+}
+
+.social-media-button:hover img {
+    transform: scale(1.15);
+}
+
+.social-media-button:hover:nth-child(1) {
+    background:  radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+
+.social-media-button:hover:nth-child(2) {
+    background-color: var(--white);
+}
+
+.social-media-button:hover:nth-child(2) svg {
+    stroke: var(--x);
+}
+
+.social-media-button:hover:nth-child(3) {
+    background-color: var(--youtube);
+}
+
+.social-media-button:hover:nth-child(4) {
+    background-color: var(--linkedin);
+}
+
+
+
+
+.subtitle, .product-list-title {
+    text-align: center;
+    font-family: montserrat;
+    font-weight: bolder
+}
+
+.subtitle {
+    font-size: 1.3em;
+}
+
+.product-list-title {
+    padding-top: 6rem;
+}
+
+.recent-product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box img {
+    padding: 1em;
+    width: 480px;
+    height: 280px;
+    filter: drop-shadow(#00000387 0.6rem 0.6rem 1rem);
+}
+
+.product-prizes, .product-description {
+    text-align: center;
+}
+
+.product-description {
+    text-transform: uppercase;
+}
+
+.product-prizes {
+    color: #404040;
+    padding-top: 0.2rem;
+}
+
+.about-me {
+    padding-top: 4rem;
+    background: linear-gradient(#3574F2, #448FF2)
+}
+
+.about-me-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    background:#000;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
